@@ -8,8 +8,6 @@
 
 To run this program:
 
-1) make  - flex tennis.lex
-	   bison -d tennis.y
-	   gcc -o tennis lex.yy.c tennis.tab.c
-           
+1) make  - gcc -c tennis.c , flex tennis.lex , gcc -c lex.yy.c , gcc -o tennis tennis.o lex.yy.o
+     
 2) ./tennis tennis_input.txt
